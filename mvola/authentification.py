@@ -1,4 +1,3 @@
-from email import header
 import requests 
 import base64
 
@@ -19,8 +18,3 @@ def get_access_token( consumer_key="", consumer_secret="") -> str :
     access_token = response.text
     return access_token
 
-consumer_key = "igWfwqPc58gGyf2ef70gJwHcnwwa"
-consumer_secret = "EpLZYgLgURWqOoF7Vz0qqf_T8NYa"
-
-access_token = get_access_token(consumer_key,consumer_secret)
-print("access token : {}".format(access_token))
