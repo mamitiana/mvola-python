@@ -6,6 +6,9 @@
   
   ```python
 from mvola.authentification import get_access_token
+
+access_token = get_access_token(consumer_key,consumer_secret)
+
 ```
   
   
